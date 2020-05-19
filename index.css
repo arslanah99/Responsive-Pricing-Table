@@ -1,0 +1,111 @@
+body {
+  background-color: #222f3e;
+  font-family: "Jost", sans-serif;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.pricingTable {
+  background-color: #f1f1f1;
+  width: 10em;
+  margin: 1em;
+  text-align: center;
+  line-height: 2.5em;
+  font-size: 2em;
+  border-radius: 0.3em;
+  height: 15em;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.priceBackground {
+  background: #1f155a;
+  border-top-right-radius: 0.3em;
+  border-top-left-radius: 0.3em;
+  color: white;
+  padding-bottom: 1em;
+}
+
+.priceBackground .name {
+  font-weight: 100;
+  margin-bottom: -1em;
+}
+
+.priceBackground .priceTag {
+  font-size: 2em;
+}
+
+.priceBackground .priceTag:before {
+  content: "$";
+  font-size: 0.3em;
+  vertical-align: super;
+  font-weight: bold;
+}
+
+.info {
+  font-weight: 500;
+  font-size: 0.7em;
+}
+
+button {
+  background-color: #40739e;
+  border: none;
+  color: white;
+  padding: 0.8em 7em;
+  text-align: center;
+  border-radius: 2em;
+  font-size: 0.4em;
+}
+
+.priceBackgroundBidness {
+  background: #d60770;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  color: white;
+  padding-bottom: 1em;
+}
+
+.priceBackgroundBidness .name {
+  font-weight: 100;
+  margin-bottom: -1em;
+}
+
+.priceBackgroundBidness .priceTag {
+  font-size: 2em;
+}
+
+.priceBackgroundBidness .priceTag:before {
+  content: "$";
+  font-size: 0.3em;
+  vertical-align: super;
+  font-weight: bold;
+}
+
+.pricingTable {
+  transition: all 0.2s ease-in-out;
+}
+
+.pricingTable:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 971px) {
+  .pricingTable {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flexContainer {
+    display: flex;
+    float: none;
+    width: 100%;
+    flex-direction: column;
+  }
+}
